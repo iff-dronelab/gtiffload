@@ -1,0 +1,17 @@
+[
+    {"name":"gtifPath",
+     "label": "GTiff Image Path",
+     "description": "Input path of the Gtiffs",
+     "type": "string",
+     "default": "/home/ladmin/Dropbox (Team Thermal)/Thermal/output_qgis/",
+     "group": "General"
+   },
+   {"name":"refreshInterval",
+    "label": "Load Refresh Interval",
+    "description": "Refresh Interval for loading GTiff",
+    "type": "string",
+    "default": "10",
+    "group": "General"
+   }
+
+]

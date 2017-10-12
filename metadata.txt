@@ -1,0 +1,21 @@
+[general]
+name=geotiffloader
+description=Enables loading of GeoTiffs with one click in QGIS.
+about=<p>Automating GeoTiff loading</p>
+category=Plugins
+qgisMinimumVersion=2.18
+version=0.1
+roles=desktop-qgis-plugin-geotiffloader
+
+author=IFF, TU-Braunschweig (Yogesh Khedar)
+email=y.khedar@tu-bs.de
+
+icon=icons/geotiff.png
+tags=geotiff,iff,automate
+
+homepage=https://bitbucket.org/khedar/qgis_gtiff_loader.git
+tracker=https://bitbucket.org/khedar/qgis_gtiff_loader.git
+repository=https://bitbucket.org/khedar/qgis_gtiff_loader.git
+
+experimental=True
+deprecated=False
