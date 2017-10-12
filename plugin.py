@@ -1,6 +1,10 @@
 from __future__ import absolute_import
 from builtins import object
 # -*- coding: utf-8 -*-
+import exiftool
+from sys import argv
+from osgeo import gdal, osr
+import exiftool,math
 
 import os, time, webbrowser
 
@@ -17,6 +21,12 @@ from qgiscommons2.gui import (addAboutMenu, removeAboutMenu, addHelpMenu,removeH
 from qgiscommons2.gui.settings import (addSettingsMenu,removeSettingsMenu)
 from qgiscommons2.settings import (readSettings,pluginSetting)
 
+## Camera Const variables for FLIR
+PIXEL_DIM_X=640
+PIXEL_DIM_Y=512
+FOV_X=45.4
+FOV_Y=34.9
+
 class GTiffTools(object):
     def __init__(self, iface):
         self.iface = iface
@@ -28,6 +38,8 @@ class GTiffTools(object):
         self.start_time = time.time()
         readSettings()
         self.image_path = pluginSetting("gtifPath")
+        self.gtif_path = pluginSetting("gtifoutPath")
+        self.trans_path = pluginSetting("translatedPath")
         self.refreshInterval = int(pluginSetting("refreshInterval"))
 
     def initGui(self):
@@ -76,15 +88,26 @@ class GTiffTools(object):
 
     def getNewImages(self):
         self.image_path = pluginSetting("gtifPath")
+        self.gtif_path = pluginSetting("gtifoutPath")
+        self.trans_path = pluginSetting("translatedPath")
         tmp_list = []
         for filename in os.listdir(self.image_path):
             if filename.endswith(".tif"):
                 tmp_list.append( os.path.join(self.image_path, filename) )
         self.new_image_list = list(set(tmp_list) - set(self.total_image_list))
         self.total_image_list = tmp_list
-        for filename in self.new_image_list:
+        for src in self.new_image_list:
             self.counter = self.counter+1
-            self.iface.addRasterLayer(filename, "image_" + str(self.counter))
+            #dst=os.path.join(self.trans_path, 'trans_'+str(self.counter)+'.tif')
+            dst=os.path.join("/home/ladmin/Desktop/tes", 'trans_'+str(self.counter)+'.tif')
+            warp_dst=os.path.join(self.gtif_path, 'rot_'+str(self.counter)+'.tif')
+            gcpList = self.getExifData(src)
+            self._showMessage(dst)
+            ds=gdal.Open(src)
+            ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], format = 'GTiff')
+            ds1=gdal.Warp(warp_dst,ds, creationOptions = ['COMPRESS=JPEG'], format = 'GTiff', resampleAlg = gdal.GRIORA_NearestNeighbour, tps=True, dstNodata = 0)
+            ds1=None
+            # self.iface.addRasterLayer(warp_dst, "image_" + str(self.counter))
 
     def setTool(self):
         self._showMessage('Loading the images Continuosly.')
@@ -96,6 +119,7 @@ class GTiffTools(object):
                 self.getNewImages()
                 self.start_time = time.time()
             QCoreApplication.processEvents()
+
     def manualSetTool(self):
         self.doAdd = False
         self._showMessage('Loading the images Manually.')
@@ -124,3 +148,33 @@ class GTiffTools(object):
 
     def _showMessage(self, message, level=QgsMessageBar.INFO):
         iface.messageBar().pushMessage(message, level, iface.messageTimeout())
+
+    def getExifData(self,image_path):
+    	## Read the required EXIF Tags from the files
+    	with exiftool.ExifTool() as et:
+    	    ALTITUDE    = et.get_tag("GPSAltitude", image_path) # They have put relative alt in gps alt
+    	    LONG_CENTER = et.get_tag("GPSLongitude", image_path)
+    	    LAT_CENTER  = et.get_tag("GPSLatitude", image_path)
+    	    HEADING     = et.get_tag("GPSImgDirection", image_path)
+
+    	    meterPerLongDegree = math.cos(LAT_CENTER * (-math.pi/180) ) * 111321
+    	    meterPerLatDegree  = 111600
+    	    GROUND_WIDTH_OF_IMAGE  = 2 * float(ALTITUDE) * math.tan(FOV_X*(math.pi/180)/2)
+    	    GROUND_HEIGHT_OF_IMAGE = 2 * float(ALTITUDE) * math.tan(FOV_Y*(math.pi/180)/2)
+    	    x0 = LONG_CENTER
+    	    y0 = LAT_CENTER
+    	    ANGLE = float(HEADING) * (-math.pi/180)
+    	    DX = GROUND_WIDTH_OF_IMAGE / 2
+    	    DY = GROUND_HEIGHT_OF_IMAGE / 2
+
+    	    x1d = (-DX * math.cos(ANGLE) - DY * math.sin(ANGLE)   ) / meterPerLongDegree  + x0
+    	    y1d = (-DX * math.sin(ANGLE) + DY * math.cos(ANGLE)   ) / meterPerLatDegree   + y0
+    	    x2d = (DX  * math.cos(ANGLE) - DY * math.sin(ANGLE)   ) / meterPerLongDegree  + x0
+    	    y2d = (DX  * math.sin(ANGLE) + DY * math.cos(ANGLE)   ) / meterPerLatDegree   + y0
+    	    x3d = (-DX * math.cos(ANGLE) + DY * math.sin(ANGLE)   ) / meterPerLongDegree  + x0
+    	    y3d = (-DX * math.sin(ANGLE) - DY * math.cos(ANGLE)   ) / meterPerLatDegree   + y0
+    	    x4d = (DX  * math.cos(ANGLE) + DY * math.sin(ANGLE)   ) / meterPerLongDegree  + x0
+    	    y4d = (DX  * math.sin(ANGLE) - DY * math.cos(ANGLE)   ) / meterPerLatDegree   + y0
+            #self._showMessage("GCP1"+str(x1d)+","+str(y1d))
+    	    gcpList = [gdal.GCP(x1d,y1d,0,0), gdal.GCP(x2d,y2d,0,PIXEL_DIM_X,0), gdal.GCP(x3d,y3d,0,0,PIXEL_DIM_Y), gdal.GCP(x4d,y4d,0,PIXEL_DIM_X,PIXEL_DIM_Y)]
+    	return gcpList

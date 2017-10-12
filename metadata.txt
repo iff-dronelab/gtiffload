@@ -4,7 +4,7 @@ description=Enables loading of GeoTiffs with one click in QGIS.
 about=<p>Automating GeoTiff loading</p>
 category=Plugins
 qgisMinimumVersion=2.18
-version=0.1
+version=2.0
 roles=desktop-qgis-plugin-geotiffloader
 
 author=IFF, TU-Braunschweig (Yogesh Khedar)
