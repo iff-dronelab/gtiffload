@@ -1,0 +1,9 @@
+.DS_Store
+
+overlays/
+
+Input/
+Translated/
+Rotated/
+
+*.log
