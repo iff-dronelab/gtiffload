@@ -156,3 +156,203 @@
 2017-11-07 14:13:44,950 - gtiffload - INFO - 					New run 									
 2017-11-07 14:13:44,950 - gtiffload - INFO -                                                                
 2017-11-07 14:13:44,950 - gtiffload - INFO - ***************************************************************
+2017-11-07 14:19:31,690 - gtiffload - INFO -                                                                
+2017-11-07 14:19:31,690 - gtiffload - INFO - ***************************************************************
+2017-11-07 14:19:31,690 - gtiffload - INFO -                                                                
+2017-11-07 14:19:31,690 - gtiffload - INFO - 					New run 									
+2017-11-07 14:19:31,690 - gtiffload - INFO -                                                                
+2017-11-07 14:19:31,690 - gtiffload - INFO - ***************************************************************
+2017-11-07 14:19:31,748 - gtiffload.plugin - INFO - Input Images Path: /home/ladmin/Desktop/tes/input
+2017-11-07 14:19:31,749 - gtiffload.plugin - INFO - Trans Images Path: /home/ladmin/Desktop/tes/trans
+2017-11-07 14:19:31,749 - gtiffload.plugin - INFO - Warped Images Path: /home/ladmin/Desktop/tes/warp
+2017-11-07 14:19:31,749 - gtiffload.plugin - INFO - Refresh Interval: 10
+2017-11-07 14:19:45,945 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:19:45,945 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:19:45,948 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:19:45,948 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:19:53,063 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:19:53,063 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:19:53,063 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:19:53,064 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:19:57,264 - gtiffload.plugin - INFO - Removing the images.
+2017-11-07 14:19:57,264 - gtiffload.plugin - INFO - Number of Raster Layers to remove are: 1
+2017-11-07 14:20:03,065 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:20:03,065 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:20:03,065 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:20:03,065 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:20:07,167 - gtiffload.plugin - INFO - Removing the images.
+2017-11-07 14:20:07,168 - gtiffload.plugin - INFO - Number of Raster Layers to remove are: 1
+2017-11-07 14:20:13,571 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:20:13,572 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:20:13,572 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:20:13,572 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:20:24,010 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:20:24,010 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:20:24,010 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:20:24,010 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:20:34,011 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:20:34,011 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:20:34,011 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:20:34,012 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:20:44,012 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:20:44,012 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:20:44,013 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:20:44,013 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:20:54,013 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:20:54,014 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:20:54,014 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:20:54,014 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:21:04,015 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:21:04,015 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:21:04,015 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:21:04,015 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:21:14,016 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:21:14,016 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:21:14,016 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:21:14,016 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:21:24,017 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:21:24,017 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:21:24,017 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:21:24,018 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:21:34,018 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:21:34,018 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:21:34,019 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:21:34,019 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:21:44,019 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:21:44,020 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:21:44,020 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:21:44,020 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:21:54,021 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:21:54,021 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:21:54,021 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:21:54,021 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:22:04,022 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:22:04,022 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:22:04,022 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:22:04,022 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:22:14,023 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:22:14,023 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:22:14,023 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:22:14,023 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:22:24,024 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:22:24,024 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:22:24,024 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:22:24,024 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:22:34,025 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:22:34,025 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:22:34,025 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:22:34,025 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:22:44,026 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:22:44,026 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:22:44,026 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:22:44,027 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:22:54,027 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:22:54,027 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:22:54,028 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:22:54,028 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:23:04,028 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:23:04,029 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:23:04,029 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:23:04,029 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:23:14,030 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:23:14,030 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:23:14,030 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:23:14,030 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:23:24,031 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:23:24,031 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:23:24,031 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:23:24,031 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:23:34,032 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:23:34,032 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:23:34,032 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:23:34,032 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:23:44,033 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:23:44,033 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:23:44,033 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:23:44,033 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:23:54,034 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:23:54,035 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:23:54,035 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:23:54,035 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:24:04,036 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:24:04,036 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:24:04,036 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:24:04,036 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:24:14,037 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:24:14,037 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:24:14,037 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:24:14,038 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:24:24,039 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:24:24,039 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:24:24,039 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:24:24,039 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:24:34,040 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:24:34,040 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:24:34,040 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:24:34,040 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:24:44,041 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:24:44,042 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:24:44,042 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:24:44,042 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:24:54,042 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:24:54,043 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:24:54,043 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:24:54,043 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:25:04,044 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:25:04,044 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:25:04,044 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:25:04,044 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:25:14,045 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:25:14,045 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:25:14,045 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:25:14,045 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:25:24,046 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:25:24,046 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:25:24,046 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:25:24,046 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:25:34,047 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:25:34,047 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:25:34,047 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:25:34,047 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:25:44,048 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:25:44,048 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:25:44,048 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:25:44,048 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:25:54,049 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:25:54,049 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:25:54,049 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:25:54,050 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:26:04,050 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:26:04,050 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:26:04,051 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:26:04,051 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:26:14,051 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:26:14,052 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:26:14,052 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:26:14,052 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:26:24,053 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:26:24,053 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:26:24,053 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:26:24,053 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:26:34,054 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:26:34,054 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:26:34,054 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:26:34,054 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:26:44,055 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:26:44,055 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:26:44,055 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:26:44,055 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:26:54,056 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:26:54,056 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:26:54,056 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:26:54,056 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:27:04,057 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:27:04,057 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:27:04,057 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:27:04,057 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:27:14,058 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:27:14,058 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:27:14,059 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-11-07 14:27:14,059 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:27:18,603 - gtiffload.plugin - INFO - Removing the images.
+2017-11-07 14:27:18,603 - gtiffload.plugin - INFO - Number of Raster Layers to remove are: 0
