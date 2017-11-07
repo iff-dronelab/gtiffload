@@ -644,3 +644,84 @@
 2017-11-07 14:50:46,143 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
 2017-11-07 14:50:47,240 - gtiffload.plugin - INFO - Removing the images.
 2017-11-07 14:50:47,240 - gtiffload.plugin - INFO - Number of Raster Layers to remove are: 0
+2017-11-07 16:16:16,683 - gtiffload - INFO -                                                                
+2017-11-07 16:16:16,683 - gtiffload - INFO - ***************************************************************
+2017-11-07 16:16:16,683 - gtiffload - INFO -                                                                
+2017-11-07 16:16:16,683 - gtiffload - INFO - 					New run 									
+2017-11-07 16:16:16,683 - gtiffload - INFO -                                                                
+2017-11-07 16:16:16,683 - gtiffload - INFO - ***************************************************************
+2017-11-07 16:16:16,735 - gtiffload.plugin - INFO - Input Images Path: /home/ladmin/Desktop/tes/input
+2017-11-07 16:16:16,736 - gtiffload.plugin - INFO - Trans Images Path: /home/ladmin/Desktop/tes/trans
+2017-11-07 16:16:16,736 - gtiffload.plugin - INFO - Warped Images Path: /home/ladmin/Desktop/tes/warp
+2017-11-07 16:16:16,736 - gtiffload.plugin - INFO - Refresh Interval: 10
+2017-11-07 16:16:30,525 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 16:16:30,525 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 16:16:30,525 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 16:17:37,706 - gtiffload - INFO -                                                                
+2017-11-07 16:17:37,706 - gtiffload - INFO - ***************************************************************
+2017-11-07 16:17:37,706 - gtiffload - INFO -                                                                
+2017-11-07 16:17:37,706 - gtiffload - INFO - 					New run 									
+2017-11-07 16:17:37,706 - gtiffload - INFO -                                                                
+2017-11-07 16:17:37,707 - gtiffload - INFO - ***************************************************************
+2017-11-07 16:17:37,762 - gtiffload.plugin - INFO - Input Images Path: /home/ladmin/Desktop/tes/input
+2017-11-07 16:17:37,762 - gtiffload.plugin - INFO - Trans Images Path: /home/ladmin/Desktop/tes/trans
+2017-11-07 16:17:37,763 - gtiffload.plugin - INFO - Warped Images Path: /home/ladmin/Desktop/tes/warp
+2017-11-07 16:17:37,763 - gtiffload.plugin - INFO - Refresh Interval: 10
+2017-11-07 16:17:43,588 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 16:17:43,588 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 16:17:43,589 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/DJI_0509.JPG
+2017-11-07 16:17:43,589 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 16:19:48,054 - gtiffload - INFO -                                                                
+2017-11-07 16:19:48,054 - gtiffload - INFO - ***************************************************************
+2017-11-07 16:19:48,054 - gtiffload - INFO -                                                                
+2017-11-07 16:19:48,055 - gtiffload - INFO - 					New run 									
+2017-11-07 16:19:48,055 - gtiffload - INFO -                                                                
+2017-11-07 16:19:48,055 - gtiffload - INFO - ***************************************************************
+2017-11-07 16:19:48,108 - gtiffload.plugin - INFO - Input Images Path: /home/ladmin/Desktop/tes/input
+2017-11-07 16:19:48,108 - gtiffload.plugin - INFO - Trans Images Path: /home/ladmin/Desktop/tes/trans
+2017-11-07 16:19:48,108 - gtiffload.plugin - INFO - Warped Images Path: /home/ladmin/Desktop/tes/warp
+2017-11-07 16:19:48,108 - gtiffload.plugin - INFO - Refresh Interval: 10
+2017-11-07 16:19:54,360 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 16:19:54,361 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 16:19:54,361 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/DJI_0509.JPG
+2017-11-07 16:19:54,361 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 16:22:04,854 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 16:22:04,854 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 16:22:04,854 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/DJI_0509.JPG
+2017-11-07 16:22:04,855 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 16:23:01,769 - gtiffload - INFO -                                                                
+2017-11-07 16:23:01,769 - gtiffload - INFO - ***************************************************************
+2017-11-07 16:23:01,769 - gtiffload - INFO -                                                                
+2017-11-07 16:23:01,769 - gtiffload - INFO - 					New run 									
+2017-11-07 16:23:01,769 - gtiffload - INFO -                                                                
+2017-11-07 16:23:01,769 - gtiffload - INFO - ***************************************************************
+2017-11-07 16:23:01,820 - gtiffload.plugin - INFO - Input Images Path: /home/ladmin/Desktop/tes/input
+2017-11-07 16:23:01,820 - gtiffload.plugin - INFO - Trans Images Path: /home/ladmin/Desktop/tes/trans
+2017-11-07 16:23:01,820 - gtiffload.plugin - INFO - Warped Images Path: /home/ladmin/Desktop/tes/warp
+2017-11-07 16:23:01,820 - gtiffload.plugin - INFO - Refresh Interval: 10
+2017-11-07 16:23:06,944 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 16:23:06,944 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 16:23:06,945 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/DJI_0497.JPG
+2017-11-07 16:23:06,945 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/DJI_0509.JPG
+2017-11-07 16:23:06,945 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 16:24:00,670 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 16:24:00,671 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 16:24:00,671 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img20.tif
+2017-11-07 16:24:00,671 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img8.tif
+2017-11-07 16:24:00,672 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img15.tif
+2017-11-07 16:24:00,672 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img9.tif
+2017-11-07 16:24:00,672 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img14.tif
+2017-11-07 16:24:00,673 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img21.tif
+2017-11-07 16:24:00,673 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 16:24:16,844 - gtiffload.plugin - INFO - Removing the images.
+2017-11-07 16:24:16,845 - gtiffload.plugin - INFO - Number of Raster Layers to remove are: 6
+2017-11-07 16:24:32,388 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 16:24:32,388 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 16:24:32,388 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/DJI_0497.JPG
+2017-11-07 16:24:32,389 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/DJI_0509.JPG
+2017-11-07 16:24:32,389 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 16:27:22,174 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 16:27:22,175 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 16:27:22,175 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/DJI_0497.JPG
+2017-11-07 16:27:22,175 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/DJI_0509.JPG
+2017-11-07 16:27:22,175 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 

@@ -105,7 +105,7 @@ class GTiffTools(object):
         self.logger.info("GDAL version is: " + gdal.__version__)
         self.logger.info("Getting New Images List. It contains all images in folder: ")
         for filename in os.listdir(self.image_path):
-            if filename.endswith(".tif" or ".JPG" or ".jpg" or "JPEG" or "jpeg"):
+            if filename.endswith(".tif") or filename.endswith(".JPG"):
                 item = os.path.join(self.image_path, filename)
                 self.logger.info(item)
                 tmp_list.append( item )
@@ -180,10 +180,14 @@ class GTiffTools(object):
 
     	## Read the required EXIF Tags from the files
     	with exiftool.ExifTool() as et:
-    	    ALTITUDE    = et.get_tag("GPSAltitude", image_path) # They have put relative alt in gps alt
     	    LONG_CENTER = et.get_tag("GPSLongitude", image_path)
     	    LAT_CENTER  = et.get_tag("GPSLatitude", image_path)
-    	    HEADING     = et.get_tag("GPSImgDirection", image_path)
+            if self.camera=="flir":
+                ALTITUDE    = et.get_tag("GPSAltitude", image_path) # They have put relative alt in gps alt
+                HEADING = et.get_tag("GPSImgDirection", image_path)
+            elif self.camera=="phantom":
+                ALTITUDE    = et.get_tag("RelativeAltitude", image_path) # They have put relative alt in gps alt
+                HEADING = et.get_tag("FlightYawDegree",image_path)
 
     	    meterPerLongDegree = math.cos(LAT_CENTER * (-math.pi/180) ) * 111321
     	    meterPerLatDegree  = 111600
