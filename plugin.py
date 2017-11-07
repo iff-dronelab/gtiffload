@@ -37,6 +37,10 @@ class GTiffTools(object):
         self.image_path = pluginSetting("gtifPath")
         self.gtif_path = pluginSetting("gtifoutPath")
         self.trans_path = pluginSetting("translatedPath")
+        if not os.path.exists(self.gtif_path):
+            os.makedirs(self.gtif_path)
+        if not os.path.exists(self.trans_path):
+            os.makedirs(self.trans_path)
         self.refreshInterval = int(pluginSetting("refreshInterval"))
         self.logger.info("Input Images Path: " + self.image_path)
         self.logger.info("Trans Images Path: " + self.trans_path)
@@ -93,6 +97,10 @@ class GTiffTools(object):
         self.image_path = pluginSetting("gtifPath")
         self.gtif_path = pluginSetting("gtifoutPath")
         self.trans_path = pluginSetting("translatedPath")
+        if not os.path.exists(self.gtif_path):
+            os.makedirs(self.gtif_path)
+        if not os.path.exists(self.trans_path):
+            os.makedirs(self.trans_path)
         tmp_list = []
         self.logger.info("GDAL version is: " + gdal.__version__)
         self.logger.info("Getting New Images List. It contains all images in folder: ")
