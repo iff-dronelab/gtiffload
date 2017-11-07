@@ -22,14 +22,6 @@ from qgiscommons2.gui import (addAboutMenu, removeAboutMenu, addHelpMenu,removeH
 from qgiscommons2.gui.settings import (addSettingsMenu,removeSettingsMenu)
 from qgiscommons2.settings import (readSettings,pluginSetting)
 
-## Camera Const variables for FLIR
-PIXEL_DIM_X=640
-PIXEL_DIM_Y=512
-FOV_X=45.4
-FOV_Y=34.9
-
-
-
 class GTiffTools(object):
     def __init__(self, iface):
         self.logger = logging.getLogger(__name__)
@@ -41,6 +33,7 @@ class GTiffTools(object):
         self.counter = 0
         self.start_time = time.time()
         readSettings()
+        self.camera = pluginSetting("camera")
         self.image_path = pluginSetting("gtifPath")
         self.gtif_path = pluginSetting("gtifoutPath")
         self.trans_path = pluginSetting("translatedPath")
@@ -163,6 +156,20 @@ class GTiffTools(object):
         iface.messageBar().pushMessage(message, level, iface.messageTimeout())
 
     def getExifData(self,image_path):
+        self.camera = pluginSetting("camera")
+        if self.camera=="flir":
+            ## Camera Const variables for FLIR
+            PIXEL_DIM_X=640
+            PIXEL_DIM_Y=512
+            FOV_X=45.4
+            FOV_Y=34.9
+        elif self.camera=="phantom":
+            ## Camera Const variables for FLIR
+            PIXEL_DIM_X=5472
+            PIXEL_DIM_Y=3648
+            FOV_X=73.7
+            FOV_Y=53.1
+
     	## Read the required EXIF Tags from the files
     	with exiftool.ExifTool() as et:
     	    ALTITUDE    = et.get_tag("GPSAltitude", image_path) # They have put relative alt in gps alt

@@ -27,5 +27,13 @@
     "default": "10",
     "group": "General"
    }
+   ,
+     {"name":"camera",
+      "label": "Camera name phantom or flir",
+      "description": "Camera name phantom or flir",
+      "type": "string",
+      "default": "flir",
+      "group": "General"
+     }
 
 ]
