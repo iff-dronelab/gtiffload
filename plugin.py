@@ -1,8 +1,6 @@
 from __future__ import absolute_import
 from builtins import object
 # -*- coding: utf-8 -*-
-import exiftool
-from sys import argv
 from osgeo import gdal, osr
 import exiftool,math
 
