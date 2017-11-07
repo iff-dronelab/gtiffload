@@ -179,7 +179,8 @@ class ExifTool(object):
                 [self.executable, "-stay_open", "True",  "-@", "-",
                  "-common_args", "-G", "-n"],
                 stdin=subprocess.PIPE, stdout=subprocess.PIPE,
-                stderr=devnull)
+                stderr=devnull,
+                creationflags=CREATE_NO_WINDOW)
         self.running = True
 
     def terminate(self):
