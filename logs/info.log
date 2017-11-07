@@ -1,0 +1,140 @@
+2017-10-25 10:56:58,330 - gtiffload - INFO -                                                                
+2017-10-25 10:56:58,331 - gtiffload - INFO - ***************************************************************
+2017-10-25 10:56:58,331 - gtiffload - INFO -
+2017-10-25 10:56:58,331 - gtiffload - INFO - 					New run
+2017-10-25 10:56:58,331 - gtiffload - INFO -
+2017-10-25 10:56:58,331 - gtiffload - INFO - ***************************************************************
+2017-10-25 10:56:58,356 - gtiffload.plugin - INFO - Input Images Path: /home/ladmin/Desktop/tes/input
+2017-10-25 10:56:58,356 - gtiffload.plugin - INFO - Trans Images Path: /home/ladmin/Desktop/tes/trans
+2017-10-25 10:56:58,357 - gtiffload.plugin - INFO - Warped Images Path: /home/ladmin/Desktop/tes/warp
+2017-10-25 10:56:58,357 - gtiffload.plugin - INFO - Refresh Interval: 10
+2017-10-25 10:57:07,446 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder:
+2017-10-25 10:57:07,447 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 10:57:07,447 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder:
+2017-10-25 10:57:07,447 - gtiffload.plugin - INFO - Source Image is: /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 10:57:07,447 - gtiffload.plugin - INFO - Counter is: 1
+2017-10-25 10:57:07,448 - gtiffload.plugin - INFO - Translated Image is: /home/ladmin/Desktop/tes/trans/trans_1.tif
+2017-10-25 10:57:07,448 - gtiffload.plugin - INFO - Warped Image is: /home/ladmin/Desktop/tes/warp/rot_1.tif
+2017-10-25 10:57:44,354 - gtiffload - INFO -
+2017-10-25 10:57:44,354 - gtiffload - INFO - ***************************************************************
+2017-10-25 10:57:44,354 - gtiffload - INFO -
+2017-10-25 10:57:44,354 - gtiffload - INFO - 					New run
+2017-10-25 10:57:44,354 - gtiffload - INFO -
+2017-10-25 10:57:44,354 - gtiffload - INFO - ***************************************************************
+2017-10-25 10:57:44,380 - gtiffload.plugin - INFO - Input Images Path: /home/ladmin/Desktop/tes/input
+2017-10-25 10:57:44,380 - gtiffload.plugin - INFO - Trans Images Path: /home/ladmin/Desktop/tes/trans
+2017-10-25 10:57:44,380 - gtiffload.plugin - INFO - Warped Images Path: /home/ladmin/Desktop/tes/warp
+2017-10-25 10:57:44,380 - gtiffload.plugin - INFO - Refresh Interval: 10
+2017-10-25 10:57:55,045 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder:
+2017-10-25 10:57:55,046 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 10:57:55,046 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder:
+2017-10-25 10:57:55,046 - gtiffload.plugin - INFO - Source Image is: /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 10:57:55,047 - gtiffload.plugin - INFO - Counter is: 1
+2017-10-25 10:57:55,047 - gtiffload.plugin - INFO - Translated Image is: /home/ladmin/Desktop/tes/trans/trans_1.tif
+2017-10-25 10:57:55,047 - gtiffload.plugin - INFO - Warped Image is: /home/ladmin/Desktop/tes/warp/rot_1.tif
+2017-10-25 10:57:55,217 - gtiffload.plugin - INFO - GCP list is: [<osgeo.gdal.GCP; proxy of <Swig Object of type 'GDAL_GCP *' at 0x7fc79fe04f60> >, <osgeo.gdal.GCP; proxy of <Swig Object of type 'GDAL_GCP *' at 0x7fc79fe048a0> >, <osgeo.gdal.GCP; proxy of <Swig Object of type 'GDAL_GCP *' at 0x7fc79fe08450> >, <osgeo.gdal.GCP; proxy of <Swig Object of type 'GDAL_GCP *' at 0x7fc79fe081e0> >]
+2017-10-25 10:57:55,218 - gtiffload.plugin - INFO - Opening the Raster in GDAL.
+2017-10-25 10:57:55,219 - gtiffload.plugin - INFO - Translating the Raster in GDAL
+2017-10-25 11:04:55,056 - gtiffload - INFO -
+2017-10-25 11:04:55,056 - gtiffload - INFO - ***************************************************************
+2017-10-25 11:04:55,056 - gtiffload - INFO -
+2017-10-25 11:04:55,056 - gtiffload - INFO - 					New run
+2017-10-25 11:04:55,056 - gtiffload - INFO -
+2017-10-25 11:04:55,056 - gtiffload - INFO - ***************************************************************
+2017-10-25 11:04:55,082 - gtiffload.plugin - INFO - Input Images Path: /home/ladmin/Desktop/tes/input
+2017-10-25 11:04:55,082 - gtiffload.plugin - INFO - Trans Images Path: /home/ladmin/Desktop/tes/trans
+2017-10-25 11:04:55,083 - gtiffload.plugin - INFO - Warped Images Path: /home/ladmin/Desktop/tes/warp
+2017-10-25 11:04:55,083 - gtiffload.plugin - INFO - Refresh Interval: 10
+2017-10-25 11:05:03,178 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder:
+2017-10-25 11:05:03,179 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 11:05:03,179 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder:
+2017-10-25 11:05:03,179 - gtiffload.plugin - INFO - Source Image is: /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 11:05:03,180 - gtiffload.plugin - INFO - Counter is: 1
+2017-10-25 11:05:03,180 - gtiffload.plugin - INFO - Translated Image is: /home/ladmin/Desktop/tes/trans/trans_1.tif
+2017-10-25 11:05:03,180 - gtiffload.plugin - INFO - Warped Image is: /home/ladmin/Desktop/tes/warp/rot_1.tif
+2017-10-25 11:05:03,349 - gtiffload.plugin - INFO - GCP list is:  (0.00P,0.00L) -> (9.6722366E,53.5593660N,0.00)  , (640.00P,0.00L) -> (9.6718333E,53.5590744N,0.00)  , (0.00P,512.00L) -> (9.6718667E,53.5595456N,0.00)  , (640.00P,512.00L) -> (9.6714634E,53.5592540N,0.00)
+2017-10-25 11:24:58,398 - __main__ - DEBUG - GCP list is:         (0.00P,0.00L) -> (9.6722366E,53.5593660N,0.00)  , (640.00P,0.00L) -> (9.6718333E,53.5590744N,0.00)  , (0.00P,512.00L) -> (9.6718667E,53.5595456N,0.00)  , (640.00P,512.00L) -> (9.6714634E,53.5592540N,0.00)
+
+2017-10-25 11:05:03,350 - gtiffload.plugin - INFO - Opening the Raster in GDAL.
+2017-10-25 11:05:03,351 - gtiffload.plugin - INFO - Translating the Raster in GDAL
+2017-10-25 11:41:13,433 - gtiffload - INFO -                                                                
+2017-10-25 11:41:13,434 - gtiffload - INFO - ***************************************************************
+2017-10-25 11:41:13,434 - gtiffload - INFO -                                                                
+2017-10-25 11:41:13,434 - gtiffload - INFO - 					New run 									
+2017-10-25 11:41:13,434 - gtiffload - INFO -                                                                
+2017-10-25 11:41:13,434 - gtiffload - INFO - ***************************************************************
+2017-10-25 11:41:13,487 - gtiffload.plugin - INFO - Input Images Path: /home/ladmin/Desktop/tes/input
+2017-10-25 11:41:13,487 - gtiffload.plugin - INFO - Trans Images Path: /home/ladmin/Desktop/tes/trans
+2017-10-25 11:41:13,488 - gtiffload.plugin - INFO - Warped Images Path: /home/ladmin/Desktop/tes/warp
+2017-10-25 11:41:13,488 - gtiffload.plugin - INFO - Refresh Interval: 10
+2017-10-25 11:41:18,121 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-10-25 11:41:18,122 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 11:41:18,122 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-10-25 11:41:18,122 - gtiffload.plugin - INFO - Source Image is: /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 11:41:18,123 - gtiffload.plugin - INFO - Counter is: 1
+2017-10-25 11:41:18,123 - gtiffload.plugin - INFO - Translated Image is: /home/ladmin/Desktop/tes/trans/trans_1.tif
+2017-10-25 11:41:18,123 - gtiffload.plugin - INFO - Warped Image ihttps://khedar@bitbucket.org/khedar/geo_tiff.gits: /home/ladmin/Desktop/tes/warp/rot_1.tif
+2017-10-25 11:41:18,293 - gtiffload.plugin - INFO - GCP list is:  (0.00P,0.00L) -> (9.6722366E,53.5593660N,0.00)  , (640.00P,0.00L) -> (9.6718333E,53.5590744N,0.00)  , (0.00P,512.00L) -> (9.6718667E,53.5595456N,0.00)  , (640.00P,512.00L) -> (9.6714634E,53.5592540N,0.00)  
+2017-10-25 11:41:18,293 - gtiffload.plugin - INFO - Opening the Raster in GDAL.
+2017-10-25 11:41:18,294 - gtiffload.plugin - INFO - Translating the Raster in GDAL
+2017-10-25 11:42:21,321 - gtiffload - INFO -                                                                
+2017-10-25 11:42:21,321 - gtiffload - INFO - ***************************************************************
+2017-10-25 11:42:21,322 - gtiffload - INFO -                                                                
+2017-10-25 11:42:21,322 - gtiffload - INFO - 					New run 									
+2017-10-25 11:42:21,322 - gtiffload - INFO -                                                                
+2017-10-25 11:42:21,322 - gtiffload - INFO - ***************************************************************
+2017-10-25 11:42:21,350 - gtiffload.plugin - INFO - Input Images Path: /home/ladmin/Desktop/tes/input
+2017-10-25 11:42:21,350 - gtiffload.plugin - INFO - Trans Images Path: /home/ladmin/Desktop/tes/trans
+2017-10-25 11:42:21,350 - gtiffload.plugin - INFO - Warped Images Path: /home/ladmin/Desktop/tes/warp
+2017-10-25 11:42:21,350 - gtiffload.plugin - INFO - Refresh Interval: 10
+2017-10-25 11:42:28,696 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-10-25 11:42:28,697 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 11:42:28,697 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-10-25 11:42:28,698 - gtiffload.plugin - INFO - Source Image is: /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 11:42:28,698 - gtiffload.plugin - INFO - Counter is: 1
+2017-10-25 11:42:28,698 - gtiffload.plugin - INFO - Translated Image is: /home/ladmin/Desktop/tes/trans/trans_1.tif
+2017-10-25 11:42:28,699 - gtiffload.plugin - INFO - Warped Image is: /home/ladmin/Desktop/tes/warp/rot_1.tif
+2017-10-25 11:42:28,881 - gtiffload.plugin - INFO - GCP list is:  (0.00P,0.00L) -> (9.6722366E,53.5593660N,0.00)  , (640.00P,0.00L) -> (9.6718333E,53.5590744N,0.00)  , (0.00P,512.00L) -> (9.6718667E,53.5595456N,0.00)  , (640.00P,512.00L) -> (9.6714634E,53.5592540N,0.00)  
+2017-10-25 11:42:28,881 - gtiffload.plugin - INFO - Opening the Raster in GDAL.
+2017-10-25 11:42:28,882 - gtiffload.plugin - INFO - Translating the Raster in GDAL
+2017-10-25 11:43:10,047 - gtiffload - INFO -                                                                
+2017-10-25 11:43:10,047 - gtiffload - INFO - ***************************************************************
+2017-10-25 11:43:10,047 - gtiffload - INFO -                                                                
+2017-10-25 11:43:10,047 - gtiffload - INFO - 					New run 									
+2017-10-25 11:43:10,047 - gtiffload - INFO -                                                                
+2017-10-25 11:43:10,047 - gtiffload - INFO - ***************************************************************
+2017-10-25 11:43:10,073 - gtiffload.plugin - INFO - Input Images Path: /home/ladmin/Desktop/tes/input
+2017-10-25 11:43:10,073 - gtiffload.plugin - INFO - Trans Images Path: /home/ladmin/Desktop/tes/trans
+2017-10-25 11:43:10,073 - gtiffload.plugin - INFO - Warped Images Path: /home/ladmin/Desktop/tes/warp
+2017-10-25 11:43:10,073 - gtiffload.plugin - INFO - Refresh Interval: 10
+2017-10-25 11:43:18,345 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-10-25 11:43:18,346 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 11:43:18,346 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-10-25 11:43:18,346 - gtiffload.plugin - INFO - Source Image is: /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 11:43:18,347 - gtiffload.plugin - INFO - Counter is: 1
+2017-10-25 11:43:18,347 - gtiffload.plugin - INFO - Translated Image is: /home/ladmin/Desktop/tes/trans/trans_1.tif
+2017-10-25 11:43:18,347 - gtiffload.plugin - INFO - Warped Image is: /home/ladmin/Desktop/tes/warp/rot_1.tif
+2017-10-25 11:43:18,523 - gtiffload.plugin - INFO - GCP list is:  (0.00P,0.00L) -> (9.6722366E,53.5593660N,0.00)  , (640.00P,0.00L) -> (9.6718333E,53.5590744N,0.00)  , (0.00P,512.00L) -> (9.6718667E,53.5595456N,0.00)  , (640.00P,512.00L) -> (9.6714634E,53.5592540N,0.00)  
+2017-10-25 11:43:18,523 - gtiffload.plugin - INFO - Opening the Raster in GDAL.
+2017-10-25 11:43:18,524 - gtiffload.plugin - INFO - Translating the Raster in GDAL
+2017-10-25 11:47:16,638 - gtiffload - INFO -                                                                
+2017-10-25 11:47:16,639 - gtiffload - INFO - ***************************************************************
+2017-10-25 11:47:16,639 - gtiffload - INFO -                                                                
+2017-10-25 11:47:16,639 - gtiffload - INFO - 					New run 									
+2017-10-25 11:47:16,639 - gtiffload - INFO -                                                                
+2017-10-25 11:47:16,639 - gtiffload - INFO - ***************************************************************
+2017-10-25 11:47:16,664 - gtiffload.plugin - INFO - Input Images Path: /home/ladmin/Desktop/tes/input
+2017-10-25 11:47:16,665 - gtiffload.plugin - INFO - Trans Images Path: /home/ladmin/Desktop/tes/trans
+2017-10-25 11:47:16,665 - gtiffload.plugin - INFO - Warped Images Path: /home/ladmin/Desktop/tes/warp
+2017-10-25 11:47:16,665 - gtiffload.plugin - INFO - Refresh Interval: 10
+2017-10-25 11:47:22,071 - gtiffload.plugin - INFO - GDAL version is: 1.10.1
+2017-10-25 11:47:22,072 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-10-25 11:47:22,072 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 11:47:22,072 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-10-25 11:47:22,073 - gtiffload.plugin - INFO - Source Image is: /home/ladmin/Desktop/tes/input/img1.tif
+2017-10-25 11:47:22,073 - gtiffload.plugin - INFO - Counter is: 1
+2017-10-25 11:47:22,073 - gtiffload.plugin - INFO - Translated Image is: /home/ladmin/Desktop/tes/trans/trans_1.tif
+2017-10-25 11:47:22,073 - gtiffload.plugin - INFO - Warped Image is: /home/ladmin/Desktop/tes/warp/rot_1.tif
+2017-10-25 11:47:22,245 - gtiffload.plugin - INFO - GCP list is:  (0.00P,0.00L) -> (9.6722366E,53.5593660N,0.00)  , (640.00P,0.00L) -> (9.6718333E,53.5590744N,0.00)  , (0.00P,512.00L) -> (9.6718667E,53.5595456N,0.00)  , (640.00P,512.00L) -> (9.6714634E,53.5592540N,0.00)  
+2017-10-25 11:47:22,246 - gtiffload.plugin - INFO - Opening the Raster in GDAL.
+2017-10-25 11:47:22,247 - gtiffload.plugin - INFO - Translating the Raster in GDAL
