@@ -356,3 +356,291 @@
 2017-11-07 14:27:14,059 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
 2017-11-07 14:27:18,603 - gtiffload.plugin - INFO - Removing the images.
 2017-11-07 14:27:18,603 - gtiffload.plugin - INFO - Number of Raster Layers to remove are: 0
+2017-11-07 14:49:36,449 - gtiffload - INFO -                                                                
+2017-11-07 14:49:36,450 - gtiffload - INFO - ***************************************************************
+2017-11-07 14:49:36,450 - gtiffload - INFO -                                                                
+2017-11-07 14:49:36,450 - gtiffload - INFO - 					New run 									
+2017-11-07 14:49:36,450 - gtiffload - INFO -                                                                
+2017-11-07 14:49:36,450 - gtiffload - INFO - ***************************************************************
+2017-11-07 14:49:36,508 - gtiffload.plugin - INFO - Input Images Path: /home/ladmin/Desktop/tes/input
+2017-11-07 14:49:36,508 - gtiffload.plugin - INFO - Trans Images Path: /home/ladmin/Desktop/tes/trans
+2017-11-07 14:49:36,509 - gtiffload.plugin - INFO - Warped Images Path: /home/ladmin/Desktop/tes/warp
+2017-11-07 14:49:36,509 - gtiffload.plugin - INFO - Refresh Interval: 10
+2017-11-07 14:49:47,583 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:49:47,583 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:49:47,584 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img20.tif
+2017-11-07 14:49:47,584 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img58.tif
+2017-11-07 14:49:47,584 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img38.tif
+2017-11-07 14:49:47,584 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img46.tif
+2017-11-07 14:49:47,585 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img57.tif
+2017-11-07 14:49:47,585 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img44.tif
+2017-11-07 14:49:47,585 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img24.tif
+2017-11-07 14:49:47,585 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img47.tif
+2017-11-07 14:49:47,585 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img49.tif
+2017-11-07 14:49:47,586 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img55.tif
+2017-11-07 14:49:47,586 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img34.tif
+2017-11-07 14:49:47,586 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img37.tif
+2017-11-07 14:49:47,586 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img23.tif
+2017-11-07 14:49:47,586 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img17.tif
+2017-11-07 14:49:47,587 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img53.tif
+2017-11-07 14:49:47,587 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img27.tif
+2017-11-07 14:49:47,587 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img32.tif
+2017-11-07 14:49:47,587 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img31.tif
+2017-11-07 14:49:47,587 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img56.tif
+2017-11-07 14:49:47,588 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img48.tif
+2017-11-07 14:49:47,588 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img35.tif
+2017-11-07 14:49:47,588 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img54.tif
+2017-11-07 14:49:47,588 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img19.tif
+2017-11-07 14:49:47,588 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img59.tif
+2017-11-07 14:49:47,588 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img41.tif
+2017-11-07 14:49:47,589 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img29.tif
+2017-11-07 14:49:47,589 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img26.tif
+2017-11-07 14:49:47,589 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img25.tif
+2017-11-07 14:49:47,589 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img50.tif
+2017-11-07 14:49:47,589 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img52.tif
+2017-11-07 14:49:47,590 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img45.tif
+2017-11-07 14:49:47,590 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img40.tif
+2017-11-07 14:49:47,590 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img30.tif
+2017-11-07 14:49:47,590 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img42.tif
+2017-11-07 14:49:47,590 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img36.tif
+2017-11-07 14:49:47,590 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img51.tif
+2017-11-07 14:49:47,591 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img18.tif
+2017-11-07 14:49:47,591 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img21.tif
+2017-11-07 14:49:47,591 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img28.tif
+2017-11-07 14:49:47,591 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img22.tif
+2017-11-07 14:49:47,591 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img33.tif
+2017-11-07 14:49:47,592 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img39.tif
+2017-11-07 14:49:47,592 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img43.tif
+2017-11-07 14:49:47,592 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:50:06,117 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:50:06,117 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:50:06,118 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img20.tif
+2017-11-07 14:50:06,118 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img58.tif
+2017-11-07 14:50:06,118 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img38.tif
+2017-11-07 14:50:06,118 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img46.tif
+2017-11-07 14:50:06,118 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img57.tif
+2017-11-07 14:50:06,118 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img44.tif
+2017-11-07 14:50:06,118 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img24.tif
+2017-11-07 14:50:06,118 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img47.tif
+2017-11-07 14:50:06,118 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img49.tif
+2017-11-07 14:50:06,118 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img55.tif
+2017-11-07 14:50:06,118 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img34.tif
+2017-11-07 14:50:06,118 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img37.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img23.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img17.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img53.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img27.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img32.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img31.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img56.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img48.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img35.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img54.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img19.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img59.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img41.tif
+2017-11-07 14:50:06,119 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img29.tif
+2017-11-07 14:50:06,120 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img26.tif
+2017-11-07 14:50:06,120 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img25.tif
+2017-11-07 14:50:06,120 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img50.tif
+2017-11-07 14:50:06,120 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img52.tif
+2017-11-07 14:50:06,120 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img45.tif
+2017-11-07 14:50:06,120 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img40.tif
+2017-11-07 14:50:06,120 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img30.tif
+2017-11-07 14:50:06,120 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img42.tif
+2017-11-07 14:50:06,120 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img36.tif
+2017-11-07 14:50:06,120 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img51.tif
+2017-11-07 14:50:06,120 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img18.tif
+2017-11-07 14:50:06,120 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img21.tif
+2017-11-07 14:50:06,120 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img28.tif
+2017-11-07 14:50:06,121 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img22.tif
+2017-11-07 14:50:06,121 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img33.tif
+2017-11-07 14:50:06,121 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img39.tif
+2017-11-07 14:50:06,121 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img43.tif
+2017-11-07 14:50:06,121 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:50:16,122 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:50:16,122 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:50:16,122 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img20.tif
+2017-11-07 14:50:16,122 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img58.tif
+2017-11-07 14:50:16,122 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img38.tif
+2017-11-07 14:50:16,122 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img46.tif
+2017-11-07 14:50:16,122 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img57.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img44.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img24.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img47.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img49.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img55.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img34.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img37.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img23.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img17.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img53.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img27.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img32.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img31.tif
+2017-11-07 14:50:16,123 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img56.tif
+2017-11-07 14:50:16,124 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img48.tif
+2017-11-07 14:50:16,124 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img35.tif
+2017-11-07 14:50:16,124 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img54.tif
+2017-11-07 14:50:16,124 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img19.tif
+2017-11-07 14:50:16,124 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img59.tif
+2017-11-07 14:50:16,124 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img41.tif
+2017-11-07 14:50:16,124 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img29.tif
+2017-11-07 14:50:16,124 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img26.tif
+2017-11-07 14:50:16,124 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img25.tif
+2017-11-07 14:50:16,124 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img50.tif
+2017-11-07 14:50:16,124 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img52.tif
+2017-11-07 14:50:16,125 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img45.tif
+2017-11-07 14:50:16,126 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img40.tif
+2017-11-07 14:50:16,126 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img30.tif
+2017-11-07 14:50:16,126 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img42.tif
+2017-11-07 14:50:16,126 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img36.tif
+2017-11-07 14:50:16,126 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img51.tif
+2017-11-07 14:50:16,126 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img18.tif
+2017-11-07 14:50:16,126 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img21.tif
+2017-11-07 14:50:16,126 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img28.tif
+2017-11-07 14:50:16,126 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img22.tif
+2017-11-07 14:50:16,126 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img33.tif
+2017-11-07 14:50:16,127 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img39.tif
+2017-11-07 14:50:16,127 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img43.tif
+2017-11-07 14:50:16,127 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:50:26,127 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:50:26,128 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:50:26,128 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img20.tif
+2017-11-07 14:50:26,128 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img58.tif
+2017-11-07 14:50:26,128 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img38.tif
+2017-11-07 14:50:26,128 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img46.tif
+2017-11-07 14:50:26,128 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img57.tif
+2017-11-07 14:50:26,128 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img44.tif
+2017-11-07 14:50:26,128 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img24.tif
+2017-11-07 14:50:26,128 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img47.tif
+2017-11-07 14:50:26,128 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img49.tif
+2017-11-07 14:50:26,128 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img55.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img34.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img37.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img23.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img17.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img53.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img27.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img32.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img31.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img56.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img48.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img35.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img54.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img19.tif
+2017-11-07 14:50:26,129 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img59.tif
+2017-11-07 14:50:26,130 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img41.tif
+2017-11-07 14:50:26,130 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img29.tif
+2017-11-07 14:50:26,130 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img26.tif
+2017-11-07 14:50:26,130 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img25.tif
+2017-11-07 14:50:26,130 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img50.tif
+2017-11-07 14:50:26,130 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img52.tif
+2017-11-07 14:50:26,130 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img45.tif
+2017-11-07 14:50:26,130 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img40.tif
+2017-11-07 14:50:26,130 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img30.tif
+2017-11-07 14:50:26,130 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img42.tif
+2017-11-07 14:50:26,131 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img36.tif
+2017-11-07 14:50:26,131 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img51.tif
+2017-11-07 14:50:26,131 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img18.tif
+2017-11-07 14:50:26,131 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img21.tif
+2017-11-07 14:50:26,131 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img28.tif
+2017-11-07 14:50:26,131 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img22.tif
+2017-11-07 14:50:26,131 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img33.tif
+2017-11-07 14:50:26,132 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img39.tif
+2017-11-07 14:50:26,132 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img43.tif
+2017-11-07 14:50:26,132 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:50:36,133 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:50:36,133 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:50:36,133 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img20.tif
+2017-11-07 14:50:36,133 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img58.tif
+2017-11-07 14:50:36,133 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img38.tif
+2017-11-07 14:50:36,133 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img46.tif
+2017-11-07 14:50:36,133 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img57.tif
+2017-11-07 14:50:36,133 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img44.tif
+2017-11-07 14:50:36,134 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img24.tif
+2017-11-07 14:50:36,134 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img47.tif
+2017-11-07 14:50:36,134 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img49.tif
+2017-11-07 14:50:36,134 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img55.tif
+2017-11-07 14:50:36,134 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img34.tif
+2017-11-07 14:50:36,134 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img37.tif
+2017-11-07 14:50:36,134 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img23.tif
+2017-11-07 14:50:36,134 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img17.tif
+2017-11-07 14:50:36,134 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img53.tif
+2017-11-07 14:50:36,134 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img27.tif
+2017-11-07 14:50:36,134 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img32.tif
+2017-11-07 14:50:36,134 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img31.tif
+2017-11-07 14:50:36,134 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img56.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img48.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img35.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img54.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img19.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img59.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img41.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img29.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img26.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img25.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img50.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img52.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img45.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img40.tif
+2017-11-07 14:50:36,135 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img30.tif
+2017-11-07 14:50:36,136 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img42.tif
+2017-11-07 14:50:36,136 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img36.tif
+2017-11-07 14:50:36,136 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img51.tif
+2017-11-07 14:50:36,136 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img18.tif
+2017-11-07 14:50:36,136 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img21.tif
+2017-11-07 14:50:36,136 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img28.tif
+2017-11-07 14:50:36,136 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img22.tif
+2017-11-07 14:50:36,136 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img33.tif
+2017-11-07 14:50:36,136 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img39.tif
+2017-11-07 14:50:36,136 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img43.tif
+2017-11-07 14:50:36,136 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:50:46,137 - gtiffload.plugin - INFO - GDAL version is: 2.1.3
+2017-11-07 14:50:46,137 - gtiffload.plugin - INFO - Getting New Images List. It contains all images in folder: 
+2017-11-07 14:50:46,139 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img20.tif
+2017-11-07 14:50:46,140 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img58.tif
+2017-11-07 14:50:46,140 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img38.tif
+2017-11-07 14:50:46,140 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img46.tif
+2017-11-07 14:50:46,140 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img57.tif
+2017-11-07 14:50:46,140 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img44.tif
+2017-11-07 14:50:46,140 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img24.tif
+2017-11-07 14:50:46,140 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img47.tif
+2017-11-07 14:50:46,140 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img49.tif
+2017-11-07 14:50:46,140 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img55.tif
+2017-11-07 14:50:46,140 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img34.tif
+2017-11-07 14:50:46,140 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img37.tif
+2017-11-07 14:50:46,140 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img23.tif
+2017-11-07 14:50:46,140 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img17.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img53.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img27.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img32.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img31.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img56.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img48.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img35.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img54.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img19.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img59.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img41.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img29.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img26.tif
+2017-11-07 14:50:46,141 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img25.tif
+2017-11-07 14:50:46,142 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img50.tif
+2017-11-07 14:50:46,142 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img52.tif
+2017-11-07 14:50:46,142 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img45.tif
+2017-11-07 14:50:46,142 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img40.tif
+2017-11-07 14:50:46,142 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img30.tif
+2017-11-07 14:50:46,142 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img42.tif
+2017-11-07 14:50:46,142 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img36.tif
+2017-11-07 14:50:46,142 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img51.tif
+2017-11-07 14:50:46,142 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img18.tif
+2017-11-07 14:50:46,142 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img21.tif
+2017-11-07 14:50:46,142 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img28.tif
+2017-11-07 14:50:46,142 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img22.tif
+2017-11-07 14:50:46,142 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img33.tif
+2017-11-07 14:50:46,143 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img39.tif
+2017-11-07 14:50:46,143 - gtiffload.plugin - INFO - /home/ladmin/Desktop/tes/input/img43.tif
+2017-11-07 14:50:46,143 - gtiffload.plugin - INFO - Getting Unique Images List. It contains new images in folder: 
+2017-11-07 14:50:47,240 - gtiffload.plugin - INFO - Removing the images.
+2017-11-07 14:50:47,240 - gtiffload.plugin - INFO - Number of Raster Layers to remove are: 0

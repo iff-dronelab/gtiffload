@@ -68,6 +68,14 @@ except NameError:
     basestring = (bytes, str)
 
 executable = "C:\exiftool.exe"
+CREATE_NO_WINDOW = 0x08000000
+
+#startupinfo = None
+#if os.name == 'nt':
+#    startupinfo = subprocess.STARTUPINFO()
+#    startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+#proc = subprocess.Popen(command, startupinfo=startupinfo)
+
 """The name of the executable to run.
 
 If the executable is not located in one of the paths listed in the
