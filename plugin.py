@@ -105,7 +105,7 @@ class GTiffTools(object):
         self.logger.info("GDAL version is: " + gdal.__version__)
         self.logger.info("Getting New Images List. It contains all images in folder: ")
         for filename in os.listdir(self.image_path):
-            if filename.endswith(".tif"):
+            if filename.endswith(".tif" or ".JPG" or ".jpg" or "JPEG" or "jpeg"):
                 item = os.path.join(self.image_path, filename)
                 self.logger.info(item)
                 tmp_list.append( item )
