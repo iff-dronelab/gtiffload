@@ -114,23 +114,15 @@ class GTiffTools(object):
         self.total_image_list = tmp_list
         self.logger.info("Getting Unique Images List. It contains new images in folder: ")
         for src in self.new_image_list:
-            self.logger.info("Source Image is: " + src)
             self.counter = self.counter+1
-            self.logger.info("Counter is: " + str(self.counter))
             dst=os.path.join(self.trans_path, 'trans_'+str(self.counter)+'.tif')
-            self.logger.info("Translated Image is: " + dst)
             warp_dst=os.path.join(self.gtif_path, 'rot_'+str(self.counter)+'.tif')
-            self.logger.info("Warped Image is: " + warp_dst)
             gcpList = self.getExifData(src)
-            self.logger.info("GCP list is: " + str(gcpList[0])+','+str(gcpList[1])+','+str(gcpList[2])+','+str(gcpList[3]) )
-            self.logger.info("Opening the Raster in GDAL.")
             ds=gdal.Open(src)
-            self.logger.info("Translating the Raster in GDAL")
             ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], format = 'GTiff')
-            self.logger.info("Warping the Raster in GDAL.")
             ds1=gdal.Warp(warp_dst,ds, creationOptions = ['COMPRESS=JPEG'], format = 'GTiff', resampleAlg = gdal.GRIORA_NearestNeighbour, tps=True, dstNodata = 0)
-            self.logger.info("Deleting the Raster.")
             ds1=None
+            self.iface.addRasterLayer(warp_dst)
 
     def setTool(self):
         self._showMessage('Loading the images Continuosly.')
