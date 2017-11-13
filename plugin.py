@@ -2,12 +2,10 @@ from __future__ import absolute_import
 from builtins import object
 # -*- coding: utf-8 -*-
 from osgeo import gdal, osr
-import exiftool,math
 
-import logging
-import threading
+import exiftool
+import os, time, webbrowser, threading, logging, math
 
-import os, time, webbrowser
 
 from qgis.core import *
 
@@ -22,9 +20,12 @@ from qgiscommons2.gui import (addAboutMenu, removeAboutMenu, addHelpMenu,removeH
 from qgiscommons2.gui.settings import (addSettingsMenu,removeSettingsMenu)
 from qgiscommons2.settings import (readSettings,pluginSetting)
 
+
+
 class GTiffTools(object):
     def __init__(self, iface):
         self.logger = logging.getLogger(__name__)
+        self.logger.info("GDAL version in this QGIS is: " + gdal.__version__)
         self.iface = iface
         self.mapTool = None
         self.doAdd = False
@@ -37,15 +38,13 @@ class GTiffTools(object):
         self.image_path = pluginSetting("gtifPath")
         self.gtif_path = pluginSetting("gtifoutPath")
         self.trans_path = pluginSetting("translatedPath")
-        if not os.path.exists(self.gtif_path):
-            os.makedirs(self.gtif_path)
-        if not os.path.exists(self.trans_path):
-            os.makedirs(self.trans_path)
         self.refreshInterval = int(pluginSetting("refreshInterval"))
+
         self.logger.info("Input Images Path: " + self.image_path)
         self.logger.info("Trans Images Path: " + self.trans_path)
         self.logger.info("Warped Images Path: " + self.gtif_path)
         self.logger.info("Refresh Interval: " + str(self.refreshInterval) )
+        self.logger.info("Camera is: " + str(self.camera) )
 
     def initGui(self):
         # Load Images GUI things Manually
@@ -82,8 +81,10 @@ class GTiffTools(object):
 
     def unsetTool(self):
         self.doAdd = False
+
         self._showMessage('Removing the images.')
         self.logger.info('Removing the images.')
+
         addedLayers = self.iface.legendInterface().layers()
         self.logger.info('Number of Raster Layers to remove are: ' + str(len(addedLayers)))
         for layer in addedLayers:
@@ -94,25 +95,40 @@ class GTiffTools(object):
         self.counter = 0
 
     def getNewImages(self):
+        self.logger.info("Getting New Images.")
+
         self.image_path = pluginSetting("gtifPath")
         self.gtif_path = pluginSetting("gtifoutPath")
         self.trans_path = pluginSetting("translatedPath")
+        self.camera = pluginSetting("camera")
+
+        self.logger.info("Input Images Path: " + self.image_path)
+        self.logger.info("Trans Images Path: " + self.trans_path)
+        self.logger.info("Warped Images Path: " + self.gtif_path)
+        self.logger.info("Camera is: " + str(self.camera) )
+
+
         if not os.path.exists(self.gtif_path):
+            self.logger.info("Output Path does not exist. Trying to create it.")
             os.makedirs(self.gtif_path)
+            self.logger.info("Output Path created.")
         if not os.path.exists(self.trans_path):
+            self.logger.info("Translated Image Path does not exist. Trying to create it.")
             os.makedirs(self.trans_path)
+            self.logger.info("Translated Image Path created.")
         tmp_list = []
-        self.logger.info("GDAL version is: " + gdal.__version__)
-        self.logger.info("Getting New Images List. It contains all images in folder: ")
+        
+        img_extensions = [".tif",".tiff","TIFF","TIF", ".jpg", ".jpeg", ".JPG", ".JPEG"]
         for filename in os.listdir(self.image_path):
-            if filename.endswith(".tif") or filename.endswith(".JPG"):
+            if filename.endswith(tuple(img_extensions)):
                 item = os.path.join(self.image_path, filename)
-                self.logger.info(item)
+                self.logger.info("Adding image to list."+item)
                 tmp_list.append( item )
         self.new_image_list = list(set(tmp_list) - set(self.total_image_list))
         self.total_image_list = tmp_list
         self.logger.info("Getting Unique Images List. It contains new images in folder: ")
         for src in self.new_image_list:
+            self.logger.info("Processing image: "+src)
             self.counter = self.counter+1
             dst=os.path.join(self.trans_path, 'trans_'+str(self.counter)+'.tif')
             warp_dst=os.path.join(self.gtif_path, 'rot_'+str(self.counter)+'.tif')
@@ -125,8 +141,8 @@ class GTiffTools(object):
 
     def setTool(self):
         self._showMessage('Loading the images Continuosly.')
+        self.logger.info("Loading the images Continuosly.")
         self.refreshInterval = int(pluginSetting("refreshInterval"))
-        #time.sleep(1)
         self.doAdd = True
         while self.doAdd:
             if time.time()-self.start_time >= self.refreshInterval:
@@ -137,10 +153,13 @@ class GTiffTools(object):
     def manualSetTool(self):
         self.doAdd = False
         self._showMessage('Loading the images Manually.')
+        self.logger.info("Loading the images Manually.")
         self.getNewImages()
 
     def stopAddingNewImages(self):
         self.doAdd = False
+        self._showMessage('Stop Loading the images.')
+        self.logger.info("Stop Loading the images.")
 
     def unload(self):
         self.doAdd = False
