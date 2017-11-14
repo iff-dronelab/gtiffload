@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
 
-import os
+import os, datetime
 import logging
 import logging.config, yaml
 
+log_path = os.path.join(os.path.dirname(__file__),"logs")
 
-logging.basicConfig(filename=os.path.join(os.path.dirname(os.path.realpath(__file__)),"logs","info.log"),
+if not os.path.exists(log_path):
+	os.makedirs(log_path)
+
+logging.basicConfig(filename=os.path.join(log_path,str(datetime.date.today())+".log"),
                             filemode='a',
                             format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                             datefmt='%H:%M:%S',
