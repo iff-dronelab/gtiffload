@@ -38,7 +38,7 @@ class GTiffTools(object):
         self.image_path = pluginSetting("gtifPath")
         self.gtif_path = pluginSetting("gtifoutPath")
         self.trans_path = pluginSetting("translatedPath")
-        self.refreshInterval = int(pluginSetting("refreshInterval"))
+        self.refreshInterval = pluginSetting("refreshInterval")
 
         self.logger.info("Input Images Path: " + self.image_path)
         self.logger.info("Trans Images Path: " + self.trans_path)
@@ -142,7 +142,7 @@ class GTiffTools(object):
     def setTool(self):
         self._showMessage('Loading the images Continuosly.')
         self.logger.info("Loading the images Continuosly.")
-        self.refreshInterval = int(pluginSetting("refreshInterval"))
+        self.refreshInterval = pluginSetting("refreshInterval")
         self.doAdd = True
         while self.doAdd:
             if time.time()-self.start_time >= self.refreshInterval:
@@ -183,17 +183,22 @@ class GTiffTools(object):
         iface.messageBar().pushMessage(message, level, iface.messageTimeout())
 
     def getExifData(self,image_path):
-        self.camera = pluginSetting("camera")
         if self.camera=="flir":
             ## Camera Const variables for FLIR
             PIXEL_DIM_X=640
             PIXEL_DIM_Y=512
             FOV_X=45.4
             FOV_Y=34.9
-        elif self.camera=="phantom":
+        elif self.camera=="p4p":
             ## Camera Const variables for FLIR
             PIXEL_DIM_X=5472
             PIXEL_DIM_Y=3648
+            FOV_X=73.7
+            FOV_Y=53.1
+        elif self.camera=="p4p_lowres":
+            ## Camera Const variables for FLIR
+            PIXEL_DIM_X=684
+            PIXEL_DIM_Y=456
             FOV_X=73.7
             FOV_Y=53.1
 
@@ -204,7 +209,7 @@ class GTiffTools(object):
             if self.camera=="flir":
                 ALTITUDE    = et.get_tag("GPSAltitude", image_path) # They have put relative alt in gps alt
                 HEADING = et.get_tag("GPSImgDirection", image_path)
-            elif self.camera=="phantom":
+            elif self.camera=="p4p" or self.camera=="p4p_lowres":
                 ALTITUDE    = et.get_tag("RelativeAltitude", image_path) # They have put relative alt in gps alt
                 HEADING = et.get_tag("FlightYawDegree",image_path)
 
