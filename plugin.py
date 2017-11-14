@@ -126,18 +126,31 @@ class GTiffTools(object):
                 tmp_list.append( item )
         self.new_image_list = list(set(tmp_list) - set(self.total_image_list))
         self.total_image_list = tmp_list
-        self.logger.info("Getting Unique Images List. It contains new images in folder: ")
+        self.logger.info("Getting Unique Images List. It contains "+ str(len(self.new_image_list)) +" new images")
         for src in self.new_image_list:
             self.logger.info("Processing image: "+src)
             self.counter = self.counter+1
             dst=os.path.join(self.trans_path, 'trans_'+str(self.counter)+'.tif')
             warp_dst=os.path.join(self.gtif_path, 'rot_'+str(self.counter)+'.tif')
+            self.logger.info("Debug1 ")
+            t1=time.time()
             gcpList = self.getExifData(src)
+            self.logger.info("Debug2 ")
+            t2=time.time()
             ds=gdal.Open(src)
-            ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], format = 'GTiff')
+            t3=time.time()
+            if self.camera=="p4p_lowres":
+                ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], width = 684, height = 456, format = 'GTiff')
+            else:
+                ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], format = 'GTiff')
+            t4=time.time()
             ds1=gdal.Warp(warp_dst,ds, creationOptions = ['COMPRESS=JPEG'], format = 'GTiff', resampleAlg = gdal.GRIORA_NearestNeighbour, tps=True, dstNodata = 0)
+            t5=time.time()
             ds1=None
             self.iface.addRasterLayer(warp_dst)
+            t6=time.time()
+            self.logger.info("Time Profile:   ReadExif  Open  Translate  Warp LoadQgis" )
+            self.logger.info("             "+ str(t2-t1) + "   "+ str(t3-t2) +"   "+ str(t4-t3) +"   "+ str(t5-t4) +"   "+ str(t6-t5) )
 
     def setTool(self):
         self._showMessage('Loading the images Continuosly.')
