@@ -132,15 +132,16 @@ class GTiffTools(object):
             self.counter = self.counter+1
             dst=os.path.join(self.trans_path, 'trans_'+str(self.counter)+'.tif')
             warp_dst=os.path.join(self.gtif_path, 'rot_'+str(self.counter)+'.tif')
-            self.logger.info("Debug1 ")
             t1=time.time()
             gcpList = self.getExifData(src)
-            self.logger.info("Debug2 ")
             t2=time.time()
             ds=gdal.Open(src)
             t3=time.time()
-            if self.camera=="p4p_lowres":
+
+            if self.camera=="p4p":
                 ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], width = 684, height = 456, format = 'GTiff')
+            elif self.camera=="p4" or self.camera=="mavic":
+                ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], width = 640, height = 480, format = 'GTiff')
             else:
                 ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], format = 'GTiff')
             t4=time.time()
@@ -202,17 +203,23 @@ class GTiffTools(object):
             PIXEL_DIM_Y=512
             FOV_X=45.4
             FOV_Y=34.9
-        elif self.camera=="p4p":
+        elif self.camera=="p4":
             ## Camera Const variables for FLIR
-            PIXEL_DIM_X=5472
-            PIXEL_DIM_Y=3648
-            FOV_X=73.7
-            FOV_Y=53.1
-        elif self.camera=="p4p_lowres":
+            PIXEL_DIM_X=640
+            PIXEL_DIM_Y=480
+            FOV_X=81.7
+            FOV_Y=66
+        elif self.camera=="p4p":
             ## Camera Const variables for FLIR
             PIXEL_DIM_X=684
             PIXEL_DIM_Y=456
             FOV_X=73.7
+            FOV_Y=53.1
+        elif self.camera=="mavic":
+            ## Camera Const variables for FLIR
+            PIXEL_DIM_X=640
+            PIXEL_DIM_Y=480
+            FOV_X=67.3
             FOV_Y=53.1
 
     	## Read the required EXIF Tags from the files
@@ -222,7 +229,7 @@ class GTiffTools(object):
             if self.camera=="flir":
                 ALTITUDE    = et.get_tag("GPSAltitude", image_path) # They have put relative alt in gps alt
                 HEADING = et.get_tag("GPSImgDirection", image_path)
-            elif self.camera=="p4p" or self.camera=="p4p_lowres":
+            elif self.camera=="p4p" or self.camera=="p4" or self.camera=="mavic" :
                 ALTITUDE    = et.get_tag("RelativeAltitude", image_path) # They have put relative alt in gps alt
                 HEADING = et.get_tag("FlightYawDegree",image_path)
 
