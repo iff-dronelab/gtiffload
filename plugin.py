@@ -140,7 +140,7 @@ class GTiffTools(object):
 
             if self.camera=="p4p":
                 ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], width = 684, height = 456, format = 'GTiff')
-            elif self.camera=="p4" or self.camera=="mavic":
+            elif self.camera=="p4" or self.camera=="mavic" or self.camera=="spark":
                 ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], width = 640, height = 480, format = 'GTiff')
             else:
                 ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], format = 'GTiff')
@@ -221,6 +221,12 @@ class GTiffTools(object):
             PIXEL_DIM_Y=480
             FOV_X=67.3
             FOV_Y=53.1
+        elif self.camera=="spark":
+            ## Camera Const variables for FLIR
+            PIXEL_DIM_X=640
+            PIXEL_DIM_Y=480
+            FOV_X=69.4
+            FOV_Y=54.9
 
     	## Read the required EXIF Tags from the files
     	with exiftool.ExifTool() as et:
@@ -229,7 +235,7 @@ class GTiffTools(object):
             if self.camera=="flir":
                 ALTITUDE    = et.get_tag("GPSAltitude", image_path) # They have put relative alt in gps alt
                 HEADING = et.get_tag("GPSImgDirection", image_path)
-            elif self.camera=="p4p" or self.camera=="p4" or self.camera=="mavic" :
+            elif self.camera=="p4p" or self.camera=="p4" or self.camera=="mavic" or self.camera=="spark":
                 ALTITUDE    = et.get_tag("RelativeAltitude", image_path) # They have put relative alt in gps alt
                 HEADING = et.get_tag("FlightYawDegree",image_path)
 
