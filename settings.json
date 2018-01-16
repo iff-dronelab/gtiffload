@@ -37,6 +37,16 @@
      "options":["flir", "p4p","p4","mavic","spark"],
      "group": "General"
     }
+    ,
+    {
+      "name":"out_format",
+     "label": "Image Output Format",
+     "description": "Choose the format of the warped images.",
+     "type": "choice",
+     "default": "mbtiles",
+     "options":["mbtiles", "geotiff"],
+     "group": "General"
+    }
 
 ]
 

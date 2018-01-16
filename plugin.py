@@ -39,6 +39,7 @@ class GTiffTools(object):
         self.gtif_path = pluginSetting("gtifoutPath")
         self.trans_path = pluginSetting("translatedPath")
         self.refreshInterval = pluginSetting("refreshInterval")
+        self.out_format = pluginSetting("out_format")
 
         self.logger.info("Input Images Path: " + self.image_path)
         self.logger.info("Trans Images Path: " + self.trans_path)
@@ -147,8 +148,10 @@ class GTiffTools(object):
             t4=time.time()
             ds1=gdal.Warp(warp_dst,ds, creationOptions = ['COMPRESS=JPEG'], format = 'GTiff', resampleAlg = gdal.GRIORA_NearestNeighbour, tps=True, dstNodata = 0)
             t5=time.time()
-            ds1=None
-            self.iface.addRasterLayer(warp_dst)
+            final_dst=os.path.join(self.gtif_path, 'final_'+str(self.counter)+'.mbtiles')
+            ds2=gdal.Translate(final_dst, ds1, format = 'Mbtiles')
+            ds2=None
+            self.iface.addRasterLayer(final_dst)
             t6=time.time()
             self.logger.info("Time Profile:   ReadExif  Open  Translate  Warp LoadQgis" )
             self.logger.info("             "+ str(t2-t1) + "   "+ str(t3-t2) +"   "+ str(t4-t3) +"   "+ str(t5-t4) +"   "+ str(t6-t5) )
