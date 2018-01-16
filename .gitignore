@@ -9,3 +9,5 @@ Rotated/
 *.log
 
 logs/
+
+*.pyc
