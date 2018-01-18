@@ -139,9 +139,9 @@ class GTiffTools(object):
             ds=gdal.Open(src)
             t3=time.time()
 
-            if self.camera=="p4p":
+            if self.camera=="DJI P4P":
                 ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], width = 684, height = 456, format = 'GTiff')
-            elif self.camera=="p4" or self.camera=="mavic" or self.camera=="spark":
+            elif self.camera=="DJI P4" or self.camera=="DJI MAVIC" or self.camera=="DJI SPARK":
                 ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], width = 640, height = 480, format = 'GTiff')
             else:
                 ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], format = 'GTiff')
@@ -149,8 +149,11 @@ class GTiffTools(object):
             ds1=gdal.Warp(warp_dst,ds, creationOptions = ['COMPRESS=JPEG'], format = 'GTiff', resampleAlg = gdal.GRIORA_NearestNeighbour, tps=True, dstNodata = 0)
             t5=time.time()
             final_dst=os.path.join(self.gtif_path, 'final_'+str(self.counter)+'.mbtiles')
-            ds2=gdal.Translate(final_dst, ds1, format = 'Mbtiles')
-            ds2=None
+            #ds2=gdal.Translate(final_dst, ds1, format = 'Mbtiles')
+            cmd = "gdal_translate "+warp_dst+" "+final_dst+" -of MBTILES"
+            self.logger.info(cmd)
+            os.system(cmd)
+            #ds2=None
             self.iface.addRasterLayer(final_dst)
             t6=time.time()
             self.logger.info("Time Profile:   ReadExif  Open  Translate  Warp LoadQgis" )
@@ -200,31 +203,31 @@ class GTiffTools(object):
         iface.messageBar().pushMessage(message, level, iface.messageTimeout())
 
     def getExifData(self,image_path):
-        if self.camera=="flir":
+        if self.camera=="FLIR A65":
             ## Camera Const variables for FLIR
             PIXEL_DIM_X=640
             PIXEL_DIM_Y=512
             FOV_X=45.4
             FOV_Y=34.9
-        elif self.camera=="p4":
+        elif self.camera=="DJI P4":
             ## Camera Const variables for FLIR
             PIXEL_DIM_X=640
             PIXEL_DIM_Y=480
             FOV_X=81.7
             FOV_Y=66
-        elif self.camera=="p4p":
+        elif self.camera=="DJI P4P":
             ## Camera Const variables for FLIR
             PIXEL_DIM_X=684
             PIXEL_DIM_Y=456
             FOV_X=73.7
             FOV_Y=53.1
-        elif self.camera=="mavic":
+        elif self.camera=="DJI MAVIC":
             ## Camera Const variables for FLIR
             PIXEL_DIM_X=640
             PIXEL_DIM_Y=480
             FOV_X=67.3
             FOV_Y=53.1
-        elif self.camera=="spark":
+        elif self.camera=="DJI SPARK":
             ## Camera Const variables for FLIR
             PIXEL_DIM_X=640
             PIXEL_DIM_Y=480
@@ -235,10 +238,10 @@ class GTiffTools(object):
     	with exiftool.ExifTool() as et:
     	    LONG_CENTER = et.get_tag("GPSLongitude", image_path)
     	    LAT_CENTER  = et.get_tag("GPSLatitude", image_path)
-            if self.camera=="flir":
+            if self.camera=="FLIR A65":
                 ALTITUDE    = et.get_tag("GPSAltitude", image_path) # They have put relative alt in gps alt
                 HEADING = et.get_tag("GPSImgDirection", image_path)
-            elif self.camera=="p4p" or self.camera=="p4" or self.camera=="mavic" or self.camera=="spark":
+            elif self.camera=="DJI P4P" or self.camera=="DJI P4" or self.camera=="DJI MAVIC" or self.camera=="DJI SPARK":
                 ALTITUDE    = et.get_tag("RelativeAltitude", image_path) # They have put relative alt in gps alt
                 HEADING = et.get_tag("FlightYawDegree",image_path)
 

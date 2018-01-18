@@ -34,7 +34,7 @@
      "description": "Choose the camera used for taking the images.",
      "type": "choice",
      "default": "flir",
-     "options":["flir", "p4p","p4","mavic","spark"],
+     "options":["FLIR A65", "DJI P4P","DJI P4P","DJI MAVIC","DJI SPARK"],
      "group": "General"
     }
     ,
