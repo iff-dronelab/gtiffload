@@ -8,7 +8,7 @@ about=<p>Automating GeoTiff loading</p>
 
 category=Plugins
 
-qgisMinimumVersion=2.18
+qgisMinimumVersion=2.14
 
 version=2.0
 

@@ -102,11 +102,14 @@ class GTiffTools(object):
         self.gtif_path = pluginSetting("gtifoutPath")
         self.trans_path = pluginSetting("translatedPath")
         self.camera = pluginSetting("camera")
+        self.out_format=pluginSetting("out_format")
 
         self.logger.info("Input Images Path: " + self.image_path)
         self.logger.info("Trans Images Path: " + self.trans_path)
         self.logger.info("Warped Images Path: " + self.gtif_path)
         self.logger.info("Camera is: " + str(self.camera) )
+        self.logger.info("Out format is: " + str(self.out_format) )
+
 
 
         if not os.path.exists(self.gtif_path):
@@ -131,8 +134,19 @@ class GTiffTools(object):
         for src in self.new_image_list:
             self.logger.info("Processing image: "+src)
             self.counter = self.counter+1
-            dst=os.path.join(self.trans_path, 'trans_'+str(self.counter)+'.tif')
-            warp_dst=os.path.join(self.gtif_path, 'rot_'+str(self.counter)+'.tif')
+            if self.out_format == "geotiff":
+                t_ext='.tif'
+                t_format = 'GTiff'
+                creationOptions = ['COMPRESS=JPEG']
+            elif self.out_format == "mbtiles":
+                t_ext='.mbtiles'
+                t_format = 'Mbtiles'
+                creationOptions = []
+            else:
+                self.logger.info("Bad output format. Only mbtiles and gtiff are supported.")
+            
+            dst=os.path.join(self.trans_path, 'trans_'+str(self.counter)+t_ext)
+            warp_dst=os.path.join(self.gtif_path, 'rot_'+str(self.counter)+t_ext)
             t1=time.time()
             gcpList = self.getExifData(src)
             t2=time.time()
@@ -140,21 +154,22 @@ class GTiffTools(object):
             t3=time.time()
 
             if self.camera=="DJI P4P":
-                ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], width = 684, height = 456, format = 'GTiff')
+                ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = creationOptions, width = 684, height = 456, format = t_format)
             elif self.camera=="DJI P4" or self.camera=="DJI MAVIC" or self.camera=="DJI SPARK":
-                ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], width = 640, height = 480, format = 'GTiff')
+                ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = creationOptions, width = 640, height = 480, format = t_format)
             else:
-                ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = ['COMPRESS=JPEG'], format = 'GTiff')
+                ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = creationOptions, format = t_format)
             t4=time.time()
-            ds1=gdal.Warp(warp_dst,ds, creationOptions = ['COMPRESS=JPEG'], format = 'GTiff', resampleAlg = gdal.GRIORA_NearestNeighbour, tps=True, dstNodata = 0)
+
+            if self.out_format == "geotiff":
+                ds1=gdal.Warp(warp_dst,ds, creationOptions = ['COMPRESS=JPEG'], format = 'GTiff', resampleAlg = gdal.GRIORA_NearestNeighbour, tps=True, dstNodata = 0)
+            elif self.out_format == "mbtiles": 
+                ds1=gdal.Warp(warp_dst,ds,  format = 'Mbtiles', resampleAlg = gdal.GRIORA_NearestNeighbour, dstNodata = 0)
+            else:
+                self.logger.info("Bad output format. Only mbtiles and gtiff are supported.")
+            ds1 = None
             t5=time.time()
-            final_dst=os.path.join(self.gtif_path, 'final_'+str(self.counter)+'.mbtiles')
-            #ds2=gdal.Translate(final_dst, ds1, format = 'Mbtiles')
-            cmd = "gdal_translate "+warp_dst+" "+final_dst+" -of MBTILES"
-            self.logger.info(cmd)
-            os.system(cmd)
-            #ds2=None
-            self.iface.addRasterLayer(final_dst)
+            self.iface.addRasterLayer(warp_dst)
             t6=time.time()
             self.logger.info("Time Profile:   ReadExif  Open  Translate  Warp LoadQgis" )
             self.logger.info("             "+ str(t2-t1) + "   "+ str(t3-t2) +"   "+ str(t4-t3) +"   "+ str(t5-t4) +"   "+ str(t6-t5) )
