@@ -160,10 +160,12 @@ class GTiffTools(object):
             ds1 = None
             if self.out_format=='mbtiles':
                 warp_dst2 = os.path.join(self.gtif_path, 'rot_'+str(self.counter)+'.mbtiles')
-                cm='gdal_translate -of MBTiles '+warp_dst + ' ' + warp_dst2
-                self.logger.info(cm)
-                gdal.Translate(warp_dst2, warp_dst, format = 'MBTiles')
+                #cm='gdal_translate -of MBTiles '+warp_dst + ' ' + warp_dst2 + ' -outsize 30 0 -r bilinear'
+                #self.logger.info(cm)
+                #os.system(cm)
+                gdal.Translate(warp_dst2, warp_dst, format = 'MBTiles' )
                 gdal.Warp(warp_dst2,warp_dst2,format = 'MBTiles', dstNodata = "0 0 0 0")            
+                os.system('gdaladdo -r average ' + warp_dst2 +' 2 4 8 16 32 64' )
 
             t5=time.time()
             if self.out_format=='mbtiles':
