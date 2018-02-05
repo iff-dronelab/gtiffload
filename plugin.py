@@ -134,16 +134,11 @@ class GTiffTools(object):
         for src in self.new_image_list:
             self.logger.info("Processing image: "+src)
             self.counter = self.counter+1
-            if self.out_format == "geotiff":
-                t_ext='.tif'
-                t_format = 'GTiff'
-                creationOptions = ['COMPRESS=JPEG']
-            elif self.out_format == "mbtiles":
-                t_ext='.mbtiles'
-                t_format = 'Mbtiles'
-                creationOptions = []
-            else:
-                self.logger.info("Bad output format. Only mbtiles and gtiff are supported.")
+
+            t_ext='.tif'
+            t_format = 'GTiff'
+            creationOptions = ['COMPRESS=JPEG']
+    
             
             dst=os.path.join(self.trans_path, 'trans_'+str(self.counter)+t_ext)
             warp_dst=os.path.join(self.gtif_path, 'rot_'+str(self.counter)+t_ext)
@@ -161,15 +156,20 @@ class GTiffTools(object):
                 ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = creationOptions, format = t_format)
             t4=time.time()
 
-            if self.out_format == "geotiff":
-                ds1=gdal.Warp(warp_dst,ds, creationOptions = ['COMPRESS=JPEG'], format = 'GTiff', resampleAlg = gdal.GRIORA_NearestNeighbour, tps=True, dstNodata = 0)
-            elif self.out_format == "mbtiles": 
-                ds1=gdal.Warp(warp_dst,ds,  format = 'Mbtiles', resampleAlg = gdal.GRIORA_NearestNeighbour, dstNodata = 0)
-            else:
-                self.logger.info("Bad output format. Only mbtiles and gtiff are supported.")
+            ds1=gdal.Warp(warp_dst,ds, creationOptions = ['COMPRESS=JPEG'], format = 'GTiff', resampleAlg = gdal.GRIORA_NearestNeighbour, tps=True, dstNodata = 0)
             ds1 = None
+            if self.out_format=='mbtiles':
+                warp_dst2 = os.path.join(self.gtif_path, 'rot_'+str(self.counter)+'.mbtiles')
+                cm='gdal_translate -of MBTiles '+warp_dst + ' ' + warp_dst2
+                self.logger.info(cm)
+                gdal.Translate(warp_dst2, warp_dst, format = 'MBTiles')
+                gdal.Warp(warp_dst2,warp_dst2,format = 'MBTiles', dstNodata = "0 0 0 0")            
+
             t5=time.time()
-            self.iface.addRasterLayer(warp_dst)
+            if self.out_format=='mbtiles':
+                self.iface.addRasterLayer(warp_dst2)
+            else:
+                self.iface.addRasterLayer(warp_dst)
             t6=time.time()
             self.logger.info("Time Profile:   ReadExif  Open  Translate  Warp LoadQgis" )
             self.logger.info("             "+ str(t2-t1) + "   "+ str(t3-t2) +"   "+ str(t4-t3) +"   "+ str(t5-t4) +"   "+ str(t6-t5) )
