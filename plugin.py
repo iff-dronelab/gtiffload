@@ -137,7 +137,7 @@ class GTiffTools(object):
 
             t_ext='.tif'
             t_format = 'GTiff'
-            creationOptions = ['COMPRESS=JPEG']
+            creationOptions = [] #['COMPRESS=JPEG']
     
             
             dst=os.path.join(self.trans_path, 'trans_'+str(self.counter)+t_ext)
@@ -156,7 +156,7 @@ class GTiffTools(object):
                 ds=gdal.Translate(dst, ds, outputSRS = 'EPSG:4326', GCPs = gcpList,creationOptions = creationOptions, format = t_format)
             t4=time.time()
 
-            ds1=gdal.Warp(warp_dst,ds, creationOptions = ['COMPRESS=JPEG'], format = 'GTiff', resampleAlg = gdal.GRIORA_NearestNeighbour, tps=True, dstNodata = 0)
+            ds1=gdal.Warp(warp_dst,ds, format = 'GTiff', resampleAlg = gdal.GRIORA_NearestNeighbour, tps=True, dstAlpha = True)
             ds1 = None
             if self.out_format=='mbtiles':
                 warp_dst2 = os.path.join(self.gtif_path, 'rot_'+str(self.counter)+'.mbtiles')
@@ -164,7 +164,7 @@ class GTiffTools(object):
                 #self.logger.info(cm)
                 #os.system(cm)
                 gdal.Translate(warp_dst2, warp_dst, format = 'MBTiles' )
-                gdal.Warp(warp_dst2,warp_dst2,format = 'MBTiles', dstNodata = "0 0 0 0")            
+                #gdal.Warp(warp_dst2,warp_dst2,format = 'MBTiles')            
                 os.system('gdaladdo -r average ' + warp_dst2 +' 2 4 8 16 32 64' )
 
             t5=time.time()
